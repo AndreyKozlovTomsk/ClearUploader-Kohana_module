@@ -6,7 +6,7 @@
  * @package		ClearUploader
  * @category    Kohana-module
  * @author		Andrey Kozlov <KozlovAB@mail.ru>
- * @copyright   (c) 2013 Andrey Kozlov Tomsk
+ * @copyright   (c) 2014 Andrey Kozlov Tomsk
  * @license		MIT, GPLv3
  */
 class Kohana_ClearUploader {
