@@ -2,12 +2,12 @@
 /**
  * ClearUploader Library
  *
- * @todo		Simple save upload files to DB or not AND remove folders with ALL files in current folder (with folder) from DB
- * @package		ClearUploader
+ * @todo        Simple save upload files to DB or not AND remove folders with ALL files in current folder (with folder) from DB
+ * @package     ClearUploader
  * @category    Kohana-module
- * @author		Andrey Kozlov <KozlovAB@mail.ru>
+ * @author      Andrey Kozlov <KozlovAB@mail.ru>
  * @copyright   (c) 2014 Andrey Kozlov Tomsk
- * @license		MIT, GPLv3
+ * @license     MIT, GPLv3
  */
 class Kohana_ClearUploader {
 
