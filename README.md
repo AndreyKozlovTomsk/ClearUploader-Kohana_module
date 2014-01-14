@@ -1,21 +1,21 @@
 ClearUploader-Kohana_module
 ===========================
 
-Simple save upload files to DB or not AND remove folders with ALL files in current folder (with folder) from DB
+**Simple save upload files to DB or not AND remove folders with ALL files in current folder (with folder) from DB**
 
 Saving/Deleting files made in DB and to the hard disk
 
 To work with the DB connection required module ORM
 
-Tested on Kohana v.3.3.1
+Tested on **Kohana v.3.3.1**
 
 ==========================================================
-Connection file bootstrap.php:
+Connection file **bootstrap.php**:
 
     'clearuploader' => MODPATH.'clearuploader', // ClearUploader
 
 ==========================================================
-SQL Model pattern (may further be any other field):
+**SQL Model pattern** (may further be any other field):
 
     id(int pk auto_increment),
     related_id(int unsigned index),
@@ -25,7 +25,7 @@ SQL Model pattern (may further be any other field):
     size(int unsigned),
     extension(string varchar(5))
     
-Example of creating a model and a model for Kohana:
+**Example** of creating a model and a model for Kohana:
 
     modules\clearuploader\model\
 
@@ -35,7 +35,7 @@ For convenience of the user data to a file, use ClearUploader-jQuery.
 
 ==========================================================
 
-Example save the file (more detail, refer to config):
+**Example save the file** (more detail, refer to config):
 
     $db_save = Clearuploader::factory(array(
             'from_ajax_file'    => $_FILES['file'],
@@ -55,7 +55,7 @@ Example save the file (more detail, refer to config):
         $this->_response['response'] = $db_save['message'];
     }
 
-Object returned class ClearUploader after saving:
+**Object returned** class ClearUploader after saving:
 
     @return  array =
         (bool)      'success'   => TRUE || FALSE,
@@ -67,7 +67,7 @@ Object returned class ClearUploader after saving:
 
 ==========================================================
 
-Example remove the file (more detail, refer to config):
+**Example remove the file** (more detail, refer to config):
 
     $db_remove = Clearuploader::factory(array(
             'model' => 'files' .$post_who,
@@ -81,7 +81,7 @@ Example remove the file (more detail, refer to config):
         $this->_response['response'] = $db_remove['message'];
     }
 
-Object returned class ClearUploader after removing:
+**Object returned** class ClearUploader after removing:
 
     @return  array =
         (bool)      'success'   => TRUE || FALSE,
@@ -89,6 +89,6 @@ Object returned class ClearUploader after removing:
 
 ==========================================================
 
-More detailing settings, refer to config:
+**More detailing settings**, refer to config:
 
     modules\clearuploader\config\clearuploader.php
