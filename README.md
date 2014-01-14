@@ -1,4 +1,4 @@
-Clear-Uploader-Kohana_module
+ClearUploader-Kohana_module
 ===========================
 
 Simple save upload files to DB or not AND remove folders with ALL files in current folder (with folder) from DB
